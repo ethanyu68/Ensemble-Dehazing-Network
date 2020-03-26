@@ -26,7 +26,7 @@ Parser arguments:
 	--test (default="./NH-HAZE_testHazy") for the testset path.
 Return: running time and the saving path for results.
 
-2. Model is in: https://drive.google.com/open?id=1bLx-Oy7kMcQVfhvR5W3Stungfb1i7bbD
+2. Model is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
 
 3.EDU_results: 
 The folder includes the dehazed images of the test images provided in NTIRE 20 Dehazing Challenge.
