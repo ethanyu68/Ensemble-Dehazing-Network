@@ -3,7 +3,7 @@ The folder include all the codes, saved models and testing results prepared for 
 
 Proposed network: "Dense ‘EDN’ Dehazing Network" 
 Team name: iPAL_EDN
-Team leader: Mingzhao Yu(ethanyu9668@gmail.com)
+Team leader: Mingzhao Yu(ethanyu@psu.com)
 Team members:  Venkateswararao Cherukuri, Tiantong Guo, Vishal Monga 
 Time: 03/26/2020
 
@@ -28,7 +28,7 @@ Return: running time and the saving path for results.
 
 2. Model is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
 
-3.EDU_results: 
+3.EDN_AT_results: 
 The folder includes the dehazed images of the test images provided in NTIRE 20 Dehazing Challenge.
 	(1) ##.png: the dehazed images using our proposed network.
 	(2) readme.txt: the information for running time, GPU and Data usage
