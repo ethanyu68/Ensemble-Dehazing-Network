@@ -2,7 +2,7 @@
 
 This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing Network for Non-homogeneous Haze](http://signal.ee.psu.edu/research/EDN/EDN.pdf) **: EDN-AT, EDN-3J, EDN-EDU**. The model 'EDN-AT' is the winner of LPIPS metric in the [NTIRE 2020 Challenge on NonHomogeneous Dehazing](https://openaccess.thecvf.com/content_CVPRW_2020/html/w31/Ancuti_NTIRE_2020_Challenge_on_NonHomogeneous_Dehazing_CVPRW_2020_paper.html).
 
-## PRE-REQUEST
+## Pre-request
 1. Python 3.7
 2. py-torch 1.0
 3. openCV
@@ -28,7 +28,7 @@ This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing 
 4. Navigate to the downloaded folder, in terminal, run the main files: 
 	`python main_xxxx.py --cuda`
 
-## FILES
+## Files
 1. **dense_xxx.py**: model file which would be imported when training and testing
 - dense_deep_residual_AT_adaptive.py: the network structure for our "EDN-AT" model
 - dense_deep_3JW.py: the network structure for our "EDN-3J" model
@@ -47,13 +47,13 @@ Parser arguments:
 Return: running time and the saving path for results.
 
 
-7. **utils.py**: function codes that can be used through the application.
+4. **utils.py**: function codes that can be used through the application.
 
-8. **pytorch_msssim**: files for calculating SSIM loss.
+5. **pytorch_msssim**: files for calculating SSIM loss.
 
-9. **Vgg16.py**: file for Vgg model, which is used for computing vgg loss.
+6. **Vgg16.py**: file for Vgg model, which is used for computing vgg loss.
 
-10. **dataset.py**: file for loading training data to dataloader.
+7. **dataset.py**: file for loading training data to dataloader.
 
 
 
