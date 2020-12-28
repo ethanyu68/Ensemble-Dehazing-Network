@@ -38,7 +38,7 @@ To correctly run the test model, the following packages are required.
 - dense_deep_EDU.py: the network structure for our "EDN-EDU" model
 
 2. **main_xxx.py**: main files for training
-- main_deep_residual_AT_adaptive.py: training file for EDN-AT
+- main_deep_AT.py: training file for EDN-AT
 - main_deep_3JW.py: training file for EDN-3J
 - main_deep_EDU.py: training file for EDN-EDU
 
