@@ -19,14 +19,14 @@ This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing 
 	`python eval_EDN_AT.py --cuda`
 	
 ## To train the model
-1. Dataset
+1. Training dataset
 	- Make sure training dataset to be in h5 file. 
 	- Make sure input dataset to be stored of size NxCx256x256 under 'INPUT' dataset name and target dataset to be stored of size NXCX256X256 under dataset name 'TARGET'.
 	- All images are normalized within 0 - 1 in h5 file.
-2. Make sure packages to be installed.
+2. download validation dataset: `NH-HAZE_validationHazy`
 3. download related files: `dense_xxx.py`, `main_xxx.py`, `utils.py`, `pytorch_msssim`, `dataset.py`, `Vgg16.py`
 4. Navigate to the downloaded folder, in terminal, run the main files: 
-	- `python main_xxxx.py --cuda --ID name_of_the_model_to_save --traindata name_of_training_dataset.h5 --valdata name_of_validataion_dataset`
+	- `python main_xxxx.py --cuda --ID name_of_the_model_to_save --traindata name_of_training_dataset.h5 --valdata NH-HAZE_validationHazy`
 	
 
 ## Files
