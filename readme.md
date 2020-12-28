@@ -1,4 +1,4 @@
-# EDN-AT
+# Ensemble Dehazing Network: EDN-AT, EDN-3J, EDN-EDU
 The folder includes all the training testing codes, saved models and testing results prepared for NTIRE 2020 Dehazing Challenge.
 
 Proposed network: "Dense ‘EDN’ Dehazing Network" 
@@ -12,11 +12,11 @@ To correctly run the test model, the following packages are required.
 2. py-torch 1.0
 3. openCV
 
-#################################TO evaluate the model####################################
+## TO evaluate the model
 Navigate to the downloaded folder, in terminal, type:
 	python eval_EDN_AT.py --cuda
 	
-#################################TO train the model####################################
+## TO train the model
 Navigate to the downloaded folder, in terminal, run the main files:
 	python main_xxxx.py --cuda
 
@@ -52,7 +52,7 @@ The folder includes the test images from NTIRE 20 Dehazing Challenge.
 
 8. **pytorch_msssim**: files for calculating SSIM loss.
 
-9. **Vgg_16.py**: filr for Vgg model, which is used for vgg loss.
+9. **Vgg16.py**: file for Vgg model, which is used for computing vgg loss.
 
 
 
