@@ -17,19 +17,10 @@ import glob
 import pytorch_msssim
 import pdb
 # Training settings
-parser = argparse.ArgumentParser(description="Pytorch DRRN")
-parser.add_argument("--batchSize", type=int, default=4, help="Training batch size")
-parser.add_argument("--patchSize", type=int, default=512, help="Training patch size")
-parser.add_argument("--traindata", default="256_total_combine.h5", type=str, help="Training datapath")#SynthesizedfromN18_256s64
-parser.add_argument("--valdataset", default="./valset2019", type=str, help="Training datapath")
+parser = argparse.ArgumentParser(description="")
 
-parser.add_argument("--nEpochs", type=int, default=100, help="Number of epochs to train for")
-parser.add_argument("--lr", type=float, default=0.0001, help="Learning Rate, Default=0.1")
-parser.add_argument("--step", type=int, default=10, help="Sets the learning rate to the initial LR decayed by momentum every n epochs, Default=5")
 parser.add_argument("--cuda", action="store_true", help="Use cuda?")
 parser.add_argument("--aug", action="store_true", help="Use aug?")
-
-parser.add_argument("--resume", default="model/dense_residual_deepModel_AT_actual_adaptive/model_epoch_50.pth", type=str, help="Path to checkpoint, Default=None")
 parser.add_argument("--start-epoch", default=1, type = int, help="Manual epoch number (useful on restarts)")
 parser.add_argument("--clip", type=float, default=0.01, help="Clipping Gradients, Default=0.01")
 parser.add_argument("--threads", type=int, default=0, help="Number of threads for data loader to use, Default=1")
@@ -37,30 +28,36 @@ parser.add_argument("--momentum", default=0.9, type=float, help="Momentum, Defau
 parser.add_argument("--weight_decay", "--wd", default=1e-6, type=float, help="Weight decay, Default=1e-4")
 parser.add_argument("--pretrained", default="", type=str, help='path to pretrained model, Default=None')
 parser.add_argument("--activation", default="no_relu", type=str, help='activation relu')
-parser.add_argument("--ID", default="residual_deepModel_AT_actual_adaptive", type=str, help='ID for training')
 
-
-parser.add_argument("--model", default="dense", type=str, help="unet or drrn or runet")
+parser.add_argument("--nEpochs", type=int, default=100, help="Number of epochs to train for")
+parser.add_argument("--lr", type=float, default=0.0001, help="Learning Rate, Default=0.1")
+parser.add_argument("--step", type=int, default=10, help="Sets the learning rate to the initial LR decayed by momentum every n epochs, Default=5")
+parser.add_argument("--valdataset", default="./valset2019", type=str, help="Training datapath")
+parser.add_argument("--batchSize", type=int, default=4, help="Training batch size")
+parser.add_argument("--patchSize", type=int, default=512, help="Training patch size")
+parser.add_argument("--traindata", default=".h5", type=str, help="Training datapath")
+parser.add_argument("--activation", default="no_relu", type=str, help='activation relu')
+parser.add_argument("--ID", default="residual_deepModel_AT_actual_adaptive", type=str, help='ID of the saved model')
+parser.add_argument("--model", default="dense", type=str, help="what model to use? default dense")
 
 def main():
     global opt, model
     opt = parser.parse_args()
     print(opt)
-
+    # check if folder for saving models exists or not. If not, create one.
     save_path = os.path.join('.', "model", "{}_{}".format(opt.model, opt.ID))
     log_dir = './records/{}_{}/'.format(opt.model, opt.ID)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
-
+    # check if cuda is available
     cuda = opt.cuda
     if cuda  and not torch.cuda.is_available():
         raise Exception("No GPU found, please run without --cuda")
 
     opt.seed = random.randint(1, 10000)
     # opt.seed = 4222
-
     print("Random Seed: ", opt.seed)
 
     cudnn.benchmark = True
