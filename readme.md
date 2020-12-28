@@ -1,17 +1,8 @@
-# Ensemble Dehazing Network: EDN-AT, EDN-3J, EDN-EDU
-The folder includes all the training testing codes, saved models and testing results prepared for NTIRE 2020 Dehazing Challenge.
+# Ensemble Dehazing Network for Non-homogeneous Haze: EDN-AT, EDN-3J, EDN-EDU
 
-Proposed network: "Dense ‘EDN’ Dehazing Network" 
+This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing Network for Non-homogeneous Haze](http://signal.ee.psu.edu/research/EDN/EDN.pdf). The model 'EDN-AT' is the winner of LPIPS metric in the [NTIRE 2020 Challenge on NonHomogeneous Dehazing](https://openaccess.thecvf.com/content_CVPRW_2020/html/w31/Ancuti_NTIRE_2020_Challenge_on_NonHomogeneous_Dehazing_CVPRW_2020_paper.html).
 
-Team name: iPAL_EDN
-
-Team leader: Mingzhao Yu(ethanyu@psu.edu)
-
-Team members:  Venkateswararao Cherukuri, Tiantong Guo, Vishal Monga 
-
-Time: 03/26/2020
 ## PRE-REQUEST
-To correctly run the test model, the following packages are required.
 1. Python 3.7
 2. py-torch 1.0
 3. openCV
