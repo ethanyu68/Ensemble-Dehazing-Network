@@ -15,6 +15,7 @@ To correctly run the test model, the following packages are required.
 1. Python 3.7
 2. py-torch 1.0
 3. openCV
+4. h5py
 
 ## To evaluate the model
 1. download the whole folder
@@ -26,7 +27,10 @@ To correctly run the test model, the following packages are required.
 	`python eval_EDN_AT.py --cuda`
 	
 ## To train the model
-- Make sure training dataset to be in .h5 file. In addition, input dataset are stored of size NxCx256x256 under 'INPUT' dataset name and target dataset are stored of size NXCX256X256 under dataset name 'TARGET'.
+- Dataset
+	- Make sure training dataset to be in h5 file. 
+	- In addition, input dataset are stored of size NxCx256x256 under 'INPUT' dataset name and target dataset are stored of size NXCX256X256 under dataset name 'TARGET'.
+	- All images are normalized within 0 - 1 in h5 file..
 - Make sure packages to be installed.
 - Navigate to the downloaded folder, in terminal, run the main files: 
 	`python main_xxxx.py --cuda`
