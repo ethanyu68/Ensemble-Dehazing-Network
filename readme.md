@@ -26,7 +26,8 @@ This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing 
 2. Make sure packages to be installed.
 3. download related files: `dense_xxx.py`, `main_xxx.py`, `utils.py`, `pytorch_msssim`, `dataset.py`, `Vgg16.py`
 4. Navigate to the downloaded folder, in terminal, run the main files: 
-	`python main_xxxx.py --cuda`
+	- `python main_xxxx.py --cuda --ID name_of_the_model_to_save --traindata name_of_training_dataset.h5 --valdata name_of_validataion_dataset`
+	
 
 ## Files
 1. **dense_xxx.py**: model file which would be imported when training and testing
