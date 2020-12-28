@@ -11,7 +11,7 @@ This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing 
 ## To evaluate the model
 1. download testing images: `NH-HAZE_testHazy`
 2. download related files: `dense_xxx.py`, `utils.py`, `eval_xxx.py`
-2. download models from below link to the folder
+2. download models from link below to the project folder
 	- EDN-AT is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
 	- EDN-3J is in: https://drive.google.com/open?id=1tajihAfoFYAN7XoYFfjXJcY20Eww-csh
 	- EDN-EDU is in: https://drive.google.com/open?id=1EKWivnW2u9Y0PZGFuavXMkvcK8bFG0Hm
