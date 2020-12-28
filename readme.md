@@ -14,11 +14,11 @@ To correctly run the test model, the following packages are required.
 
 ## TO evaluate the model
 Navigate to the downloaded folder, in terminal, type:
-	python eval_EDN_AT.py --cuda
+	`python eval_EDN_AT.py --cuda`
 	
 ## TO train the model
 Navigate to the downloaded folder, in terminal, run the main files:
-	python main_xxxx.py --cuda
+	`python main_xxxx.py --cuda`
 
 ## FILES
 1. **dense_xxx.py**: model file which would be imported when training and testing
@@ -38,7 +38,10 @@ Parser arguments:
 	--test (default="./NH-HAZE_testHazy") for the testset path.
 Return: running time and the saving path for results.
 
-4. **Model** is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
+4. **Model**:
+- EDN-AT is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
+- EDN-3J is in:
+- EDN-EDU is in:
 
 5. **EDN_AT_results**: 
 The folder includes the dehazed images of the test images provided in NTIRE 20 Dehazing Challenge.
@@ -53,6 +56,8 @@ The folder includes the test images from NTIRE 20 Dehazing Challenge.
 8. **pytorch_msssim**: files for calculating SSIM loss.
 
 9. **Vgg16.py**: file for Vgg model, which is used for computing vgg loss.
+
+10. **dataset.py**: file for loading training data to dataloader.
 
 
 
