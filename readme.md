@@ -21,7 +21,8 @@ Navigate to the downloaded folder, in terminal, type:
 	`python eval_EDN_AT.py --cuda`
 	
 ## TO train the model
-Navigate to the downloaded folder, in terminal, run the main files:
+- Make sure training dataset to be in .h5 file. In addition, input dataset are stored of size NxCx256x256 under 'INPUT' dataset name and target dataset are stored of size NXCX256X256 under dataset name 'TARGET'.
+- Navigate to the downloaded folder, in terminal, run the main files: 
 	`python main_xxxx.py --cuda`
 
 ## FILES
