@@ -25,7 +25,7 @@ EDN-AT           |  EDN-3J
 ## To train the model
 1. Training dataset
 	- Make sure training dataset is in h5 file. 
-	- Make sure input dataset is stored of size NxCx256x256 under 'INPUT' dataset name and target dataset is stored of size NXCX256X256 under dataset name 'TARGET'.
+	- Make sure input dataset is stored of size NxCxHxW under 'INPUT' dataset name and target dataset is stored of size NxCxHxW under dataset name 'TARGET'.
 	- Make sure images stored in h5 file are normalized within 0 - 1.
 2. download validation dataset: `NH-HAZE_validationHazy`
 3. download related files: `dense_xxx.py`, `main_xxx.py`, `utils.py`, `pytorch_msssim`, `dataset.py`, `Vgg16.py`
