@@ -6,11 +6,6 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
-from drrn import DRRN
-from unet import UNet
-from runet import RUNet
-from rcunet import RCUNet
-from rccunet import RCCUNet
 from dense_deep_3JW import Dense
 from dataset import DatasetFromHdf5
 from utils import *
@@ -80,17 +75,7 @@ def main():
     training_data_loader = DataLoader(dataset=train_set, num_workers=opt.threads, batch_size=opt.batchSize, shuffle=True)
 
     print("===> Building model")
-    if opt.model == 'drrn':
-        model = DRRN()
-    elif opt.model == 'unet':
-        model = UNet(3)
-    elif opt.model == 'runet':
-        model = RUNet(3)
-    elif opt.model == 'rcunet':
-        model = RCUNet(3, 1)
-    elif opt.model == 'rccunet':
-        model = RCCUNet(1)
-    elif opt.model == 'dense':
+    if opt.model == 'dense':
         model = Dense()
     else:
         raise ValueError("no known model of {}".format(opt.model))

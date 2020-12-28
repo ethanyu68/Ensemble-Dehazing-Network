@@ -6,11 +6,6 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
-#from drrn import DRRN
-#from unet import UNet
-#from runet import RUNet
-#from rcunet import RCUNet
-#from rccunet import RCCUNet
 from dense_deep_ensemble_2d6u import Dense
 from dataset import DatasetFromHdf5
 from utils import *
