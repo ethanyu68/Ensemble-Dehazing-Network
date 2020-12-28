@@ -1,6 +1,6 @@
 # Ensemble Dehazing Network for Non-homogeneous Haze
 
-This repo contains codes of 3 models proposed in CVPRW paper [Ensemble Dehazing Network for Non-homogeneous Haze](http://signal.ee.psu.edu/research/EDN/EDN.pdf) **: EDN-AT, EDN-3J, EDN-EDU**. The model 'EDN-AT' is the winner of LPIPS metric in the [NTIRE 2020 Challenge on NonHomogeneous Dehazing](https://openaccess.thecvf.com/content_CVPRW_2020/html/w31/Ancuti_NTIRE_2020_Challenge_on_NonHomogeneous_Dehazing_CVPRW_2020_paper.html).
+This repo contains codes of 3 models proposed in 2020 CVPRW paper [Ensemble Dehazing Network for Non-homogeneous Haze](http://signal.ee.psu.edu/research/EDN/EDN.pdf) **: EDN-AT, EDN-3J, EDN-EDU**. The model 'EDN-AT' is the winner of LPIPS metric in the [NTIRE 2020 Challenge on NonHomogeneous Dehazing](https://openaccess.thecvf.com/content_CVPRW_2020/html/w31/Ancuti_NTIRE_2020_Challenge_on_NonHomogeneous_Dehazing_CVPRW_2020_paper.html).
 
 EDN-AT           |  EDN-3J
 :-------------------------:|:-------------------------:
