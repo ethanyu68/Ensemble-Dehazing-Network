@@ -16,12 +16,18 @@ To correctly run the test model, the following packages are required.
 2. py-torch 1.0
 3. openCV
 
-## TO evaluate the model
-Navigate to the downloaded folder, in terminal, type:
+## To evaluate the model
+1. download the whole folder
+2. download models from below link to the folder
+	- EDN-AT is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
+	- EDN-3J is in: https://drive.google.com/open?id=1tajihAfoFYAN7XoYFfjXJcY20Eww-csh
+	- EDN-EDU is in: https://drive.google.com/open?id=1EKWivnW2u9Y0PZGFuavXMkvcK8bFG0Hm
+3. Navigate to the downloaded folder, in terminal, type:
 	`python eval_EDN_AT.py --cuda`
 	
-## TO train the model
+## To train the model
 - Make sure training dataset to be in .h5 file. In addition, input dataset are stored of size NxCx256x256 under 'INPUT' dataset name and target dataset are stored of size NXCX256X256 under dataset name 'TARGET'.
+- Make sure packages to be installed.
 - Navigate to the downloaded folder, in terminal, run the main files: 
 	`python main_xxxx.py --cuda`
 
@@ -43,18 +49,6 @@ Parser arguments:
 	--test (default="./NH-HAZE_testHazy") for the testset path.
 Return: running time and the saving path for results.
 
-4. **Model**:
-- EDN-AT is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
-- EDN-3J is in: https://drive.google.com/open?id=1tajihAfoFYAN7XoYFfjXJcY20Eww-csh
-- EDN-EDU is in: https://drive.google.com/open?id=1EKWivnW2u9Y0PZGFuavXMkvcK8bFG0Hm
-
-5. **EDN_AT_results**: 
-The folder includes the dehazed images of the test images provided in NTIRE 20 Dehazing Challenge.
-	(1) ##.png: the dehazed images using our proposed network.
-	(2) readme.txt: the information for running time, GPU and Data usage
-
-6. **NH-HAZE_testHazy**: 
-The folder includes the test images from NTIRE 20 Dehazing Challenge.
 
 7. **utils.py**: function codes that can be used through the application.
 
