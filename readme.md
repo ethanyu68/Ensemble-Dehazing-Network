@@ -2,7 +2,9 @@
 The folder includes all the training testing codes, saved models and testing results prepared for NTIRE 2020 Dehazing Challenge.
 
 Proposed network: "Dense ‘EDN’ Dehazing Network" 
+
 Team name: iPAL_EDN
+
 Team leader: Mingzhao Yu(ethanyu@psu.edu)
 Team members:  Venkateswararao Cherukuri, Tiantong Guo, Vishal Monga 
 Time: 03/26/2020
