@@ -41,5 +41,7 @@ The folder includes the test images from NTIRE 20 Dehazing Challenge.
 
 5. utils.py: function codes that can be used through the application.
 6.1. dense_deep_residual_AT_adaptive.py: the network structure for our "EDN-AT" model
+6.2. dense_deep_residual_AT_adaptive.py: the network structure for our "EDN-AT" model
+6.3. dense_deep_residual_AT_adaptive.py: the network structure for our "EDN-AT" model
 
 
