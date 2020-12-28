@@ -40,8 +40,8 @@ Return: running time and the saving path for results.
 
 4. **Model**:
 - EDN-AT is in: https://drive.google.com/open?id=1bEhbbnoqZ4HpH1zwB33QZjYy5kJVMbO5
-- EDN-3J is in:
-- EDN-EDU is in:
+- EDN-3J is in: https://drive.google.com/open?id=1tajihAfoFYAN7XoYFfjXJcY20Eww-csh
+- EDN-EDU is in: 
 
 5. **EDN_AT_results**: 
 The folder includes the dehazed images of the test images provided in NTIRE 20 Dehazing Challenge.
